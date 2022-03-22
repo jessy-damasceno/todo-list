@@ -49,3 +49,18 @@ header > p {
     text-transform: lowercase;
     font-style: italic;
 }
+
+li {
+    list-style: none;
+    max-width: 55vw;
+    padding: 2px 120px 2px 14px;
+    margin: 8px;
+    border-radius: 0px 16px 16px 0;
+    cursor: pointer;
+    text-transform: lowercase;
+    text-align: justify;
+}
+
+.selected {
+    background-color: gray;
+}
