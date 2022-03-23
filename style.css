@@ -1,68 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
+  /* COLORS */
+  --body-color: #d0d5e2;
+  --text-color: #1b1a1a;
+  --barra-lateral-color: #fff;
+  --primary-color: rgb(35, 158, 167);
+  --toggle-color: #ddd;
 
-/* COLORS */
-    --body-color: #d0d5e2;
-    --text-color: #1b1a1a;
-    --barra-lateral-color: #fff;
-    --primary-color: rgb(35, 158, 167);
-    --toggle-color: #ddd;
-
-/* TRANSITIONS */
-    --tran-02: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.4s ease;
-    --tran-05: all 0.5s ease;
+  /* TRANSITIONS */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    height: 100vh;
-    background: var(--body-color);
+  height: 100vh;
+  background: var(--body-color);
 }
 
 h1 {
-    color: var(--text-color);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: 900;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 900;
 }
 
 header {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-    font-weight: 200;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  font-weight: 200;
 }
 
 header > p {
-    max-width: fit-content;
-    text-transform: lowercase;
-    font-style: italic;
+  max-width: fit-content;
+  text-transform: lowercase;
+  font-style: italic;
 }
 
 li {
-    list-style: none;
-    max-width: 55vw;
-    padding: 2px 120px 2px 14px;
-    margin: 8px;
-    border-radius: 0px 16px 16px 0;
-    cursor: pointer;
-    text-align: justify;
+  list-style: none;
+  max-width: 55vw;
+  padding: 2px 120px 2px 14px;
+  margin: 8px;
+  border-radius: 0px 16px 16px 0;
+  cursor: pointer;
+  text-align: justify;
 }
 
 .selected {
-    background-color: gray;
+  background-color: gray;
 }
 
 .completed {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
