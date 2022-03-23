@@ -53,11 +53,11 @@ li {
 	margin: 4px;
   cursor: pointer;
   text-align: justify;
-	/* transition: var(--tran-04); */
+	transition: var(--tran-04);
 }
 
 .selected {
-  background-color: rgb(128, 128, 128);
+  background-color: rgba(128, 128, 128, 0.4);
 }
 
 .completed {

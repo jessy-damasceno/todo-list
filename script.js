@@ -52,10 +52,10 @@ function removeCompleteds() {
 
 function removeSelected() {
   const taskSelected = document.querySelector('.selected');
-  // const nextSelected = document.querySelector('.selected').nextElementSibling;
+  const nextSelected = document.querySelector('.selected').nextElementSibling;
   if (!taskSelected) return false;
   taskSelected.remove();
-  // nextSelected.classList.add('selected'); adicionei isto para melhorar a experiência de usuário
+  nextSelected.classList.add('selected');
 }
 
 function moveUp() {
