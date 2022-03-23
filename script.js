@@ -30,6 +30,9 @@ function selectColor(e) {
 }
 
 function completeTask(e) {
+  if (e.target.id === 'lista-tarefas') {
+    return false;
+  }
   e.target.classList.toggle('completed');
 }
 
@@ -48,10 +51,11 @@ function removeCompleteds() {
 }
 
 function removeSelected() {
-  const taskSelected = document.querySelectorAll('.selected');
-  for (let i = 0; i < taskSelected.length; i += 1) {
-    taskSelected[i].remove();
-  }
+  const taskSelected = document.querySelector('.selected');
+  const nextSelected = document.querySelector('.selected').nextElementSibling;
+  if (!taskSelected) return false;
+  taskSelected.remove();
+  nextSelected.classList.add('selected');
 }
 
 function moveUp() {
@@ -82,9 +86,17 @@ window.onload = function loadList() {
   list.innerHTML = localStorage.getItem('list');
 };
 
+function addListItem(e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    addItemList();
+  }
+}
+
 btnDeleteAll.addEventListener('click', deleteAll);
 btnRemoveCompleteds.addEventListener('click', removeCompleteds);
 btnRemoveSelecteds.addEventListener('click', removeSelected);
 btnMoveUp.addEventListener('click', moveUp);
 btnMoveDown.addEventListener('click', moveDown);
 btnSaveTasks.addEventListener('click', saveTasks);
+inputText.addEventListener('keyup', addListItem); // https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp

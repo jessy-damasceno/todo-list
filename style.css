@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;790;900&display=swap');
 
 :root {
   /* COLORS */
@@ -24,7 +24,7 @@
 
 body {
   height: 100vh;
-  background: var(--body-color);
+  background: var(--toggle-color);
 }
 
 h1 {
@@ -43,25 +43,100 @@ header {
 }
 
 header > p {
-  max-width: fit-content;
   text-transform: lowercase;
   font-style: italic;
 }
 
 li {
   list-style: none;
-  max-width: 55vw;
-  padding: 2px 120px 2px 14px;
-  margin: 8px;
-  border-radius: 0px 16px 16px 0;
+  padding: 5px;
+	margin: 4px;
   cursor: pointer;
   text-align: justify;
+	transition: var(--tran-04);
 }
 
 .selected {
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.295);
 }
 
 .completed {
   text-decoration: line-through;
+}
+
+.taskList {
+	margin: auto;
+	border-radius: 4px;
+	background-color: var(--barra-lateral-color);
+	box-shadow: 0px 1px 10px gray;
+	border-top: 8px solid #2fc18c;
+	max-width: 60vw;
+  min-width: 60vw;
+  max-height: 60vh;
+  min-height: 60vh;
+}
+
+.addTask-input {
+  display: flex;
+  justify-content: center;
+	margin-bottom: 15px;
+  margin-top: 15px;
+  gap: 24px;
+  align-items: center;
+}
+
+button {
+	background: var(--barra-lateral-color);
+  border: none;
+	padding: 2px 20px;
+	cursor: pointer;
+  border-radius: 20px;
+  font-size: 14px;
+  align-items: center;
+  font-weight: 400;
+}
+
+.options {
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 70vw;
+  margin: auto;
+}
+
+#apaga-tudo {
+  background-color: #ff3333;
+  color: var(--barra-lateral-color);
+}
+
+#remover-selecionado {
+  background-color: rgb(151, 151, 151);
+  color: var(--text-color);
+}
+
+#salvar-tarefas {
+  background-color: #2f86d8;
+}
+
+input {
+  min-width: 70vw;
+  border-radius: 14px;
+  box-shadow: none;
+  border: none;
+  padding: 6px;
+}
+
+.bx-add-to-queue {
+  font-size: 18px;
+  color: white
+}
+
+#criar-tarefa {
+  background-color: #2fc18c;
+  transition: var(--tran-02);
+}
+
+#criar-tarefa:active {
+  background-color: var(--toggle-color);
 }

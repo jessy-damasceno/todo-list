@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>To do List</title>
 </head>
 
@@ -17,17 +18,21 @@
     <main>
         <div class="Tasks">
             <div class="addTask-input">
-                <input type="text" name="Digite o nome do item que deseja adicionar à lista" id="texto-tarefa">
-                <button id="criar-tarefa">Click</button>
-                <button id="apaga-tudo">APAGA TUDO!</button>
-                <button id="remover-finalizados">REMOVE FINALIZADOS</button>
-                <button id="remover-selecionado">REMOVER SELECIONADO</button>
-                <button id="mover-cima">MOVE UP</button>
-                <button id="mover-baixo">MOVE DOWN</button>
-                <button id="salvar-tarefas">SALVAR TAREFAS</button>
+                <input placeholder="Digite sua tarefa" type="text" name="Digite o nome do item que deseja adicionar à lista" id="texto-tarefa">
+                <button id="criar-tarefa"><i class='bx bx-check-double' ></i></button>
             </div>
             <div class="taskList">
                 <ol id="lista-tarefas"></ol>
+            </div>
+            <div class="options">
+                <button id="apaga-tudo"><i class='bx bx-x'></i></button>
+                <button id="remover-finalizados"><i class='bx bx-list-check'></i></button>
+                <button id="remover-selecionado">REMOVER SELECIONADO</button>
+                <div>
+                    <button id="mover-cima"><i class='bx bx-chevron-up'></i></button>
+                    <button id="mover-baixo"><i class='bx bx-chevron-down'></i></button>
+                </div>
+                <button id="salvar-tarefas"><i class='bx bxs-save'></i></button>
             </div>
         </div>
 
