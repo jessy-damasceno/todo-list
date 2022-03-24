@@ -16,6 +16,7 @@ function addItemList() {
   itemList.innerText = inputText.value;
   list.appendChild(itemList);
   inputText.value = '';
+  inputText.focus();
 }
 
 btnTarefa.addEventListener('click', addItemList);
