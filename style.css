@@ -40,6 +40,7 @@ body {
 h1 {
   color: var(--text-color);
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 5px;
   font-weight: 900;
 }
@@ -54,6 +55,7 @@ header {
 
 header > p {
   text-transform: lowercase;
+  text-align: center;
   font-style: italic;
 }
 
