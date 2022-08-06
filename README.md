@@ -1,6 +1,6 @@
 # Boas vindas ao repositório do projeto Lista de Tarefas!
 
-<img src="./todo-list.png" alt="Todo List project" />
+<img src="./todo-list-print.png" alt="Todo List project" />
 
 ### Veja a aplicação em: https://todo-list-psi-five.vercel.app/
 
